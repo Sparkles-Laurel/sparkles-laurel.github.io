@@ -19,6 +19,12 @@ body {
   .bold {
     font: bold;
   }
+
+  .monospace {
+    font-family: monospace;
+    text-decoration: underline green;
+  }
+
   li.question .emphasised {
     font: under;
   }
