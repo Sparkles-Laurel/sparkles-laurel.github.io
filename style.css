@@ -1,0 +1,29 @@
+body {
+    background-color: #000000;
+    align-content: center;
+  }
+
+  #header {
+    font-size: 36pt;
+    color: #ccffcc;
+  }
+
+  #header .author-name {
+    font-size: 11pt;
+  }
+
+  li.question {
+    color: #CCCCCC;
+  }
+
+  ol.answers {
+    list-style-type: upper-alpha;
+  }
+
+  ol.answers li.question-answer :not(.part) {
+    font: 28pt 'Cascadia Code PL';
+  }
+
+  body {
+    color: #ffffff;
+  }
