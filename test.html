@@ -3,53 +3,53 @@
 
 <head>
   <style>
-     body {
-    background-color: #000000;
-    align-content: center;
-  }
+    body {
+      background-color: #000000;
+      align-content: center;
+    }
 
-  #header {
-    font-size: 36pt;
-    color: #ccffcc;
-  }
+    #header {
+      font-size: 36pt;
+      color: #ccffcc;
+    }
 
-  #header .author-name {
-    font-size: 11pt;
-  }
+    #header .author-name {
+      font-size: 11pt;
+    }
 
-  li.question {
-    color: #CCCCCC;
-  }
+    li.question {
+      color: #CCCCCC;
+    }
 
-  .bold {
-    font: bold;
-  }
+    .bold {
+      font: bold;
+    }
 
-  .monospace {
-    font-family: monospace;
-    text-decoration: underline green;
-  }
+    .monospace {
+      font-family: monospace;
+      text-decoration: underline green;
+    }
 
-  li.question .emphasised {
-    font: under;
-  }
+    li.question .emphasised {
+      font: under;
+    }
 
-  ol.answers {
-    list-style-type: upper-alpha;
-  }
+    ol.answers {
+      list-style-type: upper-alpha;
+    }
 
-  ol.answers li.question-answer :not(.part) {
-    font:  'Cascadia Code PL';
-  }
+    ol.answers li.question-answer :not(.part) {
+      font: 'Cascadia Code PL';
+    }
 
-  .response-ascii {
-     font-style: italic;
-     font-size: small;
-  }
+    .response-ascii {
+      font-style: italic;
+      font-size: small;
+    }
 
-  body {
-    color: #ffffff;
-  }
+    body {
+      color: #ffffff;
+    }
   </style>
 </head>
 
@@ -89,13 +89,25 @@
       hangisi
       <span class="word-emphasised">yanlıştır</span>?
       <ol class="answers" type="A">
-        <li class="question-answer"> HTTP/1.1 200 OK</li>
-        <li class="question-answer"> HTTP/1.1 101 SWITCHING PROTOCOLS</li>
-        <li class="question-answer"> HTTP/1.1 403 FORBIDDEN</li>
-        <li class="question-answer"> HTTP/1.1 301 MOVED PERMANENTLY</li>
-        <li class="question-answer"> HTTP/1.1 502 RESTRICTED BY WINDOWS PARENTAL
-          CONTROLS</li>
-        <li class="question-answer"> HTTP/1.1 418 I'M A TEAPOT</li>
+        <li class="question-answer">
+          <span class="monospace">HTTP/1.1 200 OK</span>
+        </li>
+        <li class="question-answer">
+          <span class="monospace">HTTP/1.1 101 SWITCHING PROTOCOLS</span>
+        </li>
+        <li class="question-answer">
+          <span class="monospace">HTTP/1.1 403 FORBIDDEN</span>
+        </li>
+        <li class="question-answer">
+          <span class="monospace">HTTP/1.1 301 MOVED PERMANENTLY</span>
+        </li>
+        <li class="question-answer">
+          <span class="monospace">HTTP/1.1 502 RESTRICTED BY WINDOWS PARENTAL
+            CONTROLS</span>
+          </li>
+        <li class="question-answer">
+          <span class="monospace">HTTP/1.1 418 I'M A TEAPOT</span>
+        </li>
       </ol>
     </li>
     <li class="question">Aşağıda verilen Assembly talimatlarından hangisi
@@ -109,7 +121,7 @@
           ilgili yazmaca yükler.</li>
         <li class="question-answer"> <span class="monospace">EXTRN {ident}:</span> Bir nesnenin başka bir modülde
           tanımlandığını ima eder.</li>
-        <li class="question-answer"> SHL {reg}, {1/CL}: {reg} operandındaki değerin
+        <li class="question-answer"> <span class="monospace">SHL {reg}, {1/CL}: {reg}</span> operandındaki değerin
           bitlerini sola kaydırır.</li>
       </ol>
     </li>
@@ -127,7 +139,7 @@
     <li class="question">Aşağıdakilerden hangisinde OSI modelinin katmanları ve
       veri birimi doğru sırayla verilmiştir?</li>
     <ol class="answers" type="A">
-      <li class="question-answer"> 
+      <li class="question-answer">
         <ul class="multiline-answer">
           <li class="part"> <span class="bold">MEDYA KATMANLARI:</span> </li>
           <li class="part"> 1: Fiziksel(bit)</li>
@@ -140,18 +152,19 @@
           <li class="part"> 7: Uygulama (ham veri)</li>
         </ul>
       </li>
-      <li class="question-answer"> 
+      <li class="question-answer">
         <ul class="multiline-answer">
           <li class="part"> <span class="bold">MEDYA KATMANLARI:</span> </li>
           <li class="part"> 1: Fiziksel(kB)</li>
           <li class="part"> 2: Veri Bağlama(frame)</li>
           <li class="part"> 3: Oturum(segment/datagram)</li>
-          <li class="part">  <span class="bold">SUNUM KATMANLARI:</span> </li>
-          <li class="part"> 4: Ağ (paket)</li></li>
-          <li class="part"> 5: İletim (frame)</li>
-          <li class="part"> 6: Sunum (ham veri)</li>
-          <li class="part"> 7: Uygulama (ham veri)</li>
-        </ul>
+          <li class="part"> <span class="bold">SUNUM KATMANLARI:</span> </li>
+          <li class="part"> 4: Ağ (paket)</li>
+      </li>
+      <li class="part"> 5: İletim (frame)</li>
+      <li class="part"> 6: Sunum (ham veri)</li>
+      <li class="part"> 7: Uygulama (ham veri)</li>
+      </ul>
       </li>
       <li class="question-answer">
         <ul class="multiline-answer">
@@ -160,7 +173,7 @@
           <li class="part"> 2: Veri Bağlama(frame)</li>
           <li class="part"> 3: Ağ(paket)</li>
           <li class="part"> <span class="bold">SUNUM KATMANLARI:</span> </li>
-          <li class="part">  4: İletim (segment/datagram) </li>
+          <li class="part"> 4: İletim (segment/datagram) </li>
           <li class="part"> 5: Oturum (ham veri)</li>
           <li class="part"> 6: Uygulama (ham veri)</li>
           <li class="part"> 7: Sunum (ham veri)</li>
@@ -218,7 +231,8 @@
         çalıştırılabilen veya başka kütüphanelere/ELF'lere bağlanabilen bir
         programdır.</li>
     </ol>
-    <li class="question">GNU/Linux sistemlerinde bulunan <span class="monospace">sudo</span> komutunun kullanım amacı nedir?</li>
+    <li class="question">GNU/Linux sistemlerinde bulunan <span class="monospace">sudo</span> komutunun kullanım amacı
+      nedir?</li>
     <ol class="answers" type="A">
       <li class="question-answer"> Herhangi bir sisteme yetkisiz erişimde bulunmak
         için kullanılır. root kullanıcının şifresini bilmeye gerek yoktur.</li>
