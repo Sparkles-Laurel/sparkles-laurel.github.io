@@ -34,7 +34,7 @@
     list-style-type: upper-alpha;
   }
 
-  ol.answers li.question-answer :not(.part) {
+  ol.answers li.question-answer {
     font: 11pt 'Cascadia Code PL';
   }
 
