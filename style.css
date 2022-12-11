@@ -16,6 +16,9 @@ body {
     color: #CCCCCC;
   }
 
+  .bold {
+    font: bold;
+  }
   li.question .emphasised {
     font: under;
   }
