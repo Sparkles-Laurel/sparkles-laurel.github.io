@@ -24,6 +24,11 @@ body {
     font: 28pt 'Cascadia Code PL';
   }
 
+  .response-ascii {
+     font-style: italic;
+     font-size: small;
+  }
+
   body {
     color: #ffffff;
   }
