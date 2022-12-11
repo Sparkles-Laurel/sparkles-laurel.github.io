@@ -1,6 +1,7 @@
  body {
     background-color: #000000;
     align-content: center;
+    font-size: 11pt;
   }
 
   #header {
@@ -34,7 +35,7 @@
   }
 
   ol.answers li.question-answer :not(.part) {
-    font: 28pt 'Cascadia Code PL';
+    font: 11pt 'Cascadia Code PL';
   }
 
   .response-ascii {
