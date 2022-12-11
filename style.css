@@ -17,7 +17,7 @@ body {
   }
 
   ol.answers {
-    list-style-type: upper-latin;
+    list-style-type: upper-alpha;
   }
 
   ol.answers li.question-answer :not(.part) {
