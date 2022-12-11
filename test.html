@@ -3,52 +3,96 @@
 
 <head>
   <style>
-    body {
-      background-color: #000000;
-      align-content: center;
+    @media print {
+      body {
+        background-color: #ffffff;
+        align-content: center;
+      }
+
+      #header {
+        font-size: 36pt;
+        color: #330192;
+      }
+
+      #header .author-name {
+        font-size: 11pt;
+      }
+
+      li.question {
+        color: #CCCCCC;
+      }
+
+      .bold {
+        font: bold;
+      }
+
+      .monospace {
+        font-family: monospace;
+        text-decoration: underline green;
+      }
+
+      li.question .emphasised {
+        font: under;
+      }
+
+      ol.answers {
+        list-style-type: upper-alpha;
+      }
+
+      ol.answers li.question-answer :not(.part) {
+        font: 'Cascadia Code PL';
+      }
+
+      .response-ascii {
+        font-style: italic;
+        font-size: small;
+      }
     }
 
-    #header {
-      font-size: 36pt;
-      color: #ccffcc;
-    }
+    @media screen {
+      body {
+        background-color: #000000;
+        align-content: center;
+      }
 
-    #header .author-name {
-      font-size: 11pt;
-    }
+      #header {
+        font-size: 36pt;
+        color: #ccffcc;
+      }
 
-    li.question {
-      color: #CCCCCC;
-    }
+      #header .author-name {
+        font-size: 11pt;
+      }
 
-    .bold {
-      font: bold;
-    }
+      li.question {
+        color: #CCCCCC;
+      }
 
-    .monospace {
-      font-family: monospace;
-      text-decoration: underline green;
-    }
+      .bold {
+        font: bold;
+      }
 
-    li.question .emphasised {
-      font: under;
-    }
+      .monospace {
+        font-family: monospace;
+        text-decoration: underline green;
+      }
 
-    ol.answers {
-      list-style-type: upper-alpha;
-    }
+      li.question .emphasised {
+        font: under;
+      }
 
-    ol.answers li.question-answer :not(.part) {
-      font: 'Cascadia Code PL';
-    }
+      ol.answers {
+        list-style-type: upper-alpha;
+      }
 
-    .response-ascii {
-      font-style: italic;
-      font-size: small;
-    }
+      ol.answers li.question-answer :not(.part) {
+        font: 'Cascadia Code PL';
+      }
 
-    body {
-      color: #ffffff;
+      .response-ascii {
+        font-style: italic;
+        font-size: small;
+      }
     }
   </style>
 </head>
@@ -104,7 +148,7 @@
         <li class="question-answer">
           <span class="monospace">HTTP/1.1 502 RESTRICTED BY WINDOWS PARENTAL
             CONTROLS</span>
-          </li>
+        </li>
         <li class="question-answer">
           <span class="monospace">HTTP/1.1 418 I'M A TEAPOT</span>
         </li>
