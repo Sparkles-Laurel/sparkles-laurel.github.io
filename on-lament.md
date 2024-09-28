@@ -251,5 +251,6 @@ typedef struct __config_t {
 ```
 [<small>(source)</small>](https://gitlab.archlinux.org/pacman/pacman/-/blob/master/src/pacman/conf.h?ref_type=heads#L47)
 
+Don't be frightened by the huge data structure, half of it is often empty
 It is often handy for a program to refer to its config in an object because it makes dealing with the values much easier. On startup, the config file is loaded with these lines of code:
 ```c
